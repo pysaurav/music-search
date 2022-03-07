@@ -16,22 +16,22 @@ This allows user to :
 
 ### Clone the repositiory
 ```
-git clone https://gitlab.com/ting-ting/technology/mvp/utilities/spotify-search.git
+git clone git@github.com:pysaurav/music-search.git
 ```
 
 ### Switch into the repository directory
 ```
-cd spotify-search
+cd music-search
 ```
 
-### Build the docker image
+### Install requirements
 ```
-docker build -t spotify-search .
-```
-
-### Run the docker container
-```
-docker run -dit -p 5000:5000 --name spotify-search spotify-search
+pip install -r requirements.txt
 ```
 
-### Access the web application  [here](http://127.0.0.1:5000/)
+### Run the views.py
+```
+python views.py
+```
+
+### Access the web application  [here](http://127.0.0.1:80/)
