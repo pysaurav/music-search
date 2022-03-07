@@ -1,0 +1,6 @@
+{
+  "url":"https://api.soundchat.io/graphql",
+  "headers":{
+            "x-api-key":"SAMPLE-API-KEY"
+  }
+}
