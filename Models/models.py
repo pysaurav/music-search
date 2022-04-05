@@ -213,7 +213,7 @@ def parse_track(track):
 
 
 def get_available_countries():
-    countries = read_json(os.path.join('static', 'countries.json'))
+    countries = read_json(os.path.join('Views','static', 'countries.json'))
     return countries
 
 

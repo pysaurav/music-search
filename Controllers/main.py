@@ -4,11 +4,13 @@ import os
 import json
 import secrets
 from flask import Flask, render_template, request, jsonify
-from models import search_track, get_a_playlist, search_playlist, get_available_countries, send_cache_clear_request
-
+from Models.models import search_track, get_a_playlist, search_playlist, get_available_countries, send_cache_clear_request
+import os 
 
 secret_key = secrets.token_hex(16)
-app = Flask(__name__)
+print(os.getcwd())
+# template_dir = os.path.join('Views','templates')
+app = Flask(__name__, template_folder= '../Views/templates', static_folder='../Views/static')
 app.config['SECRET_KEY'] = secret_key
 
 
