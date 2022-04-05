@@ -2,7 +2,7 @@
 """
 import pytest
 import requests_mock
-from models import search_track, search_playlist
+from Models.models import search_track, search_playlist
 
 #pylint: disable= E0401
 #pylint: disable= W0621
